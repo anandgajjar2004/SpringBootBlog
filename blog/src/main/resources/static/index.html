@@ -1,0 +1,14 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<body>
+<div ng-app="blog" ng-controller="blogController">
+	<table width="100%" border="1">
+  		<tr ng-repeat="post in listOfPost">
+    		<td>{{ post.title }}</td>
+    		<td>{{ post.body }}</td>
+  		</tr>
+	</table>
+</div>
+</body>
+</html>
