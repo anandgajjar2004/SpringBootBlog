@@ -1,0 +1,9 @@
+<table width="100%" border="1">
+	<tr ng-repeat="post in listOfPost">
+		<td>{{ post.title }}</td>
+		<td>{{ post.body }}</td>
+		<td width="10%"><a href="#/post/{{post.id}}">View</a></td>
+		<td width="10%"><a href="#" ng-click="deletePost(post.id);">Delete</a></td>
+	</tr>
+</table>
+<a href="#/post/new">Create New Post</a>
